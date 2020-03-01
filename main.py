@@ -7,14 +7,21 @@ if __name__ == "__main__":
 	num_args = len(args)
 
 
-	page_size = args[0]
-	num_pages = args[1]
+	page_size = args[0].split('=')[1] #just obtain the number 1000
+	num_pages = args[1].split('=')[1]
 	output = args[2]
 
-	try:
-		if 
+	 
 
-	except Exception as e:
-		print(f'Something went wrong {e}')
 
-		raise 
+"""
+through process:
+
+1. get argument from main.py
+	page_size
+	page_num
+2. call function from api.py 
+3. api.py will send the request 
+4. then display output in json
+
+"""
