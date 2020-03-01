@@ -5,17 +5,10 @@ from src.bigdata1.api import get_data
 
 if __name__ == "__main__":
 	parse = argparse.ArgumentParser(description="Process parameters")
-	
+	parse = add_argument('--page_size', type = float)
 
-
-
-
-
-
-
-
-
-
+	args = parser.parse_args()
+	get_data(arg.page_size)
 
 
 
