@@ -1,19 +1,34 @@
-import sys 
+#import sys 
+import argparse
 
-import src.api 
+from src.bigdata1.api import get_data
 
 if __name__ == "__main__":
-	args = sys.argv[1:]
-	num_args = len(args)
+	parse = argparse.ArgumentParser(description="Process parameters")
+	
 
 
-	page_size = args[0].split('=')[1] #just obtain the number 1000
-	num_pages = args[1].split('=')[1]
-	output = args[2]
-
-	 
 
 
+
+
+
+
+
+
+
+
+
+
+
+"""
+(conflict)
+#args = sys.argv[1:]
+#num_args = len(args)
+#page_size = args[0].split('=')[1]
+#num_pages = args[1].split('=')[1]
+#output = args[2]
+"""
 """
 through process:
 
