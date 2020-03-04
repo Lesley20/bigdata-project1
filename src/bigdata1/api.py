@@ -3,12 +3,13 @@
 import os
 from sodapy import Socrata
 
-def get_data(page_size: int) -> dict:
+def get_data(page_size: int, num_page: int):
 	try: 
 		client = Socrata('data.cityofnewyork.us', os.environ['APP_KEY'])
 
-		client.get('nc67-uf89', limit={page_size})
-		#client.get('nc67-uf89',select='COUNT(*)')
+		for i in range (num_page): 
+			client.get('nc67-uf89', limit={page_size}, offset={})
+			#client.get('nc67-uf89',select='COUNT(*)')
 
 	except Exception as e:
 		print(f'Something went wrong {e}')
