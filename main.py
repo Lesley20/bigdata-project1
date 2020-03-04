@@ -1,4 +1,4 @@
-import sys 
+#import sys 
 import argparse
 
 from src.bigdata1.api import get_data
@@ -6,7 +6,7 @@ from src.bigdata1.api import get_data
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 	parser.add_argument("--page_size", type = int)
-	parser.add_argument("--num_pages", type = int)
+	#parser.add_argument("--num_pages", type = int)
 
 	args = parser.parse_args()
 	get_data(args.page_size)
