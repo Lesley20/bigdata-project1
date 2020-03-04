@@ -15,9 +15,9 @@ def get_data(page_size: int) -> dict:
 
 		raise 
 
-def get_result:
-	try:
-		pass
+#def get_result:
+	#try:
+		#pass
 
-	except Exception as e:
-		pass
+	#except Exception as e:
+		#pass
