@@ -14,10 +14,3 @@ def get_data(page_size: int, num_page: int) -> dict:
 		print(f'Something went wrong {e}')
 
 		raise 
-
-#def get_result:
-	#try:
-		#pass
-
-	#except Exception as e:
-		#pass
