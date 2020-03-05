@@ -13,5 +13,4 @@ def get_data(page_size: int, num_page: int):
 
 	except Exception as e:
 		print(f'Something went wrong {e}')
-
 		raise 
