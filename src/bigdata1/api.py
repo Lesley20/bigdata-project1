@@ -3,7 +3,7 @@
 import os
 from sodapy import Socrata
 
-def get_data(page_size: int, num_pages: int):
+def get_records(page_size: int, num_pages: int):
 	try: 
 		client = Socrata('data.cityofnewyork.us', os.environ['APP_KEY'])
 
