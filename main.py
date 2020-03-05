@@ -9,7 +9,7 @@ if __name__ == "__main__":
 	parser.add_argument("--num_pages", type = int)
 
 	args = parser.parse_args()
-	get_data(args.page_size, args.num_pages)
+	get_records(args.page_size, args.num_pages)
 
 
 
